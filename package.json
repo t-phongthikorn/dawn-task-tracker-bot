@@ -4,7 +4,6 @@
   "description": "Discord bot that turns each channel into a to-do list / epic tracker for game dev teams.",
   "main": "dist/main.js",
   "type": "commonjs",
-  "postinstall": "tsc",
   "allowScripts": {
     "better-sqlite3": true,
     "esbuild": true
@@ -14,6 +13,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "postinstall": "tsc",
     "start": "node dist/main.js",
     "dev": "tsx watch src/main.ts",
     "typecheck": "tsc --noEmit"
