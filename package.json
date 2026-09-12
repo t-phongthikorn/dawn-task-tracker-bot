@@ -1,0 +1,29 @@
+{
+  "name": "dawn",
+  "version": "0.1.0",
+  "description": "Discord bot that turns each channel into a to-do list / epic tracker for game dev teams.",
+  "main": "dist/main.js",
+  "type": "commonjs",
+  "postinstall": "tsc",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "dev": "tsx watch src/main.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "better-sqlite3": "^11.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.10.0",
+    "@types/better-sqlite3": "^7.6.11"
+  },
+  "license": "MIT"
+}

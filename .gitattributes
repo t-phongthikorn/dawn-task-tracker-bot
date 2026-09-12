@@ -1,0 +1,9 @@
+# บังคับให้ทุกไฟล์ข้อความใช้ LF เสมอ ไม่ว่า OS ไหนจะ checkout
+* text=auto eol=lf
+
+# ไฟล์ไบนารีห้ามยุ่งเรื่อง line ending เด็ดขาด
+*.sqlite binary
+*.sqlite-shm binary
+*.sqlite-wal binary
+*.png binary
+*.jpg binary
