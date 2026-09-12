@@ -5,6 +5,10 @@
   "main": "dist/main.js",
   "type": "commonjs",
   "postinstall": "tsc",
+  "allowScripts": {
+    "better-sqlite3": true,
+    "esbuild": true
+  },
   "engines": {
     "node": ">=22.0.0"
   },
